@@ -15,7 +15,7 @@ const remarkableVideo = (md) => {
   }
 
   md.renderer.rules.link_close = (tokens, idx, options, env) => {
-    if (env.youtube) {
+    if (env.video) {
       env.video = false
       return '</video>'
     }
